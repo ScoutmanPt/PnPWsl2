@@ -1,0 +1,4 @@
+﻿<head>
+  {{#_description}}<meta name="description" content="{{_description}}">{{/_description}}
+  <link rel="shortcut icon" href="{{{_appFaviconPath}}}">
+</head>

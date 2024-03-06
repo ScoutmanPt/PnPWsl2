@@ -1,0 +1,211 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+
+/* Clickability fix for selector on sm devices */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  article h1:first-of-type:before {
+    height: 0;
+    margin-top: 0;
+  }  
+} */
+
+#toc {
+  background-color: #FFFFFF;
+  border-left: #FFFFFF;
+}
+.toc .nav > li > a {
+  color: #000000;
+  margin-left: 5px;
+  display: block;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.navbar-default,
+.navbar,
+.navbar-collapse {
+  border-color: #e7e7e7;
+  background-color: #2E7FBE;
+  padding: 0px;
+  transition: 350ms;
+}
+.navbar-inverse {
+  background-color: var(--header-bg-color);
+  z-index: 100;
+}
+
+.toc-filter {
+  border: 1px solid #e7e7e7;
+}
+
+
+.navbar .navbar-nav>li>a {
+  color: #FFFFFF;
+  background-color: #2E7FBE;
+  border-bottom: #FFFFFF 3px transparent;
+ 
+}
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover{
+  border-bottom: #FFFFFF 3px solid;
+ 
+}
+
+
+.navbar .navbar-nav>.active>a:focus,
+
+.navbar .navbar-nav>li>a:hover  {
+  color: #FFFFFF;
+  background-color: #2E7FBE;
+  border-bottom: #FFFFFF 3px solid;
+  
+
+
+}
+.navbar-nav > li > a {
+  padding: 0;
+  margin: 10px 15px;
+}
+/* button, a {
+  color: #FFFFFF;
+} */
+
+.grad-bottom {
+  height: 0px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.footer a {
+  color: var(--footer-text-color);
+  text-decoration: underline;
+}
+/* .navbar-brand > img {
+  height: 20px;
+} */
+.navbar-brand {
+  padding: 5px 0px;
+  height: 50px;
+  width:120px;
+
+}
+
+.sidetoc.shiftup {
+  bottom: 0px;
+}
+
+.sidetoc {
+  top: 110px;
+  width: 220px;;
+}
+
+.sidefilter {
+  top: 50px;
+  padding: 0px;
+}
+
+.icon-bar {
+  background-color: black;
+}
+
+.btn {
+  text-align: left;
+}
+
+.sidenav,
+.fixed_header,
+.toc {
+  background-color: #FFFFFF;
+}
+
+.toc>ul {
+  text-align: left;
+}
+
+body {
+  color: var(--font-color);
+  font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+
+}
+
+header {
+  background-color: #FFFFFF;
+}
+
+.toc .nav>li {
+  display: block;
+}
+
+.toc li:after {
+  content: "";
+}
+
+ .container, .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+} 
+.article {
+  margin-top: 81px;
+  margin-bottom: 115px;
+}
+.fab {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 11px 0 0 0;
+  border: none;
+  outline: none;
+  color: #FFF;
+  border-radius: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+.fab + .fab {
+margin-right: 15px;
+}
+.article.grid-right {
+  margin-left: 233px;
+}
+.subnav {
+  min-height: 18px;
+  background-color: #FFFFFF;
+}
+.pagination>.active>a {
+  background-color:  #2E7FBE;
+  border-color: #2E7FBE;
+}
+.sideaffix {
+  margin-top: 0px;
+  font-size: 12px;
+  max-height: 100%;
+  overflow: hidden;
+  top: 100px;
+  bottom: 10px;
+  position: fixed;
+  width: 160px;
+}
+#autocollapse .navbar-brand {
+ 
+}
+article h1, article h2, article h3, article h4 {
+  margin-top: 35px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}

@@ -1,0 +1,34 @@
+﻿name: Deploy PnPWsl2 Docs to PnPWsl2 v11
+on:
+  push:
+    branches:
+    - 'main/**'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      ## docfx build and deploy
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 7.x
+      - name: Install docfx
+        run: dotnet tool install -g docfx --version 2.72.1
+        ## run powershell script Build-HelpFiles
+      - name: Build Documentation Files
+        shell: pwsh
+        run: |
+          ./build/Build-DocsSite.ps1;
+      - name: Deploy to public blog
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token:  ${{ secrets.LIVE_PNPWSL2 }}
+          external_repository: ScoutmanPt/pnpwsl2docs
+          publish_dir: ../docs
+          #   keep_files: true
+          user_name: God
+          user_email: God@scoutman.pt
+          publish_branch: main
+          cname: www.scoutman.pt/pnpwsl2docs
