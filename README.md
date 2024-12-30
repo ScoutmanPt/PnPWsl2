@@ -3,6 +3,12 @@
 
 This is a PowerShell module for managing WSL2 instances.
 
+# ⚠️ Repository Archived
+
+**This repository is no longer maintained and is now in read-only mode. It has become part of the [PnP initiative](https://pnp.github.io/wsl2).**
+
+
+
 ## Why this module?  
 
 I do love cmdline tools but most of them don't have autocompletion making us revisit command syntax help over and over again.
@@ -17,10 +23,6 @@ And if you are a consultant in multiple clients, multiple tenants, multiple proj
 
 Plus i was actually tired of typing the same commands over and over again ( call me lazy 🤠)
 
-
-
-  
- 
 
 
 ### Main goals :
